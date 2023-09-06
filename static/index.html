@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>群内实名绑定</title>
+    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="realnamebind.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <form class="row g-3 needs-validation was-validated" novalidate action="bind" method="post">
+        <div class="mb-3">
+            <label class="form-label">QQ号</label>
+            <input type="text" class="form-control" name="qid" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">学号</label>
+            <input type="text" class="form-control" name="sid" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">真实姓名</label>
+            <input type="text" class="form-control" name="realname" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">身份证号后六位</label>
+            <input type="text" class="form-control" name="realid" required>
+            <div id="privatetip" class="form-text">身份信息仅作身份认证用途，我们不会以任何形式存储你提交的信息。我们将通过实名认证来清理群内的广告主、非新生等其他无关人员，感谢你的配合！</div>
+        </div>
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+
+</body>
+
+</html>
